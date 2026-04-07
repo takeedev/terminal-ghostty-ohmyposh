@@ -61,3 +61,9 @@ window-padding-y = 10
 brew install fzf
 $(brew --prefix)/opt/fzf/install
 ```
+
+#### Install zsh (zsh-syntax-highlighting) 
+```shell
+brew install zsh-syntax-highlighting
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+```
