@@ -32,3 +32,26 @@ eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/JanDeDob
 ```shell
 source ~/.zshrc
 ```
+
+### Install Font
+```text
+brew install font-jetbrains-mono-nerd-font
+```
+#### Create folder 
+```shell
+mkdir -p ~/.config/ghostty
+```
+#### Open file 
+```shell
+vim ~/.config/ghostty/config
+```
+#### Reload Or Reopen
+```text
+font-family = "JetBrainsMono Nerd Font"
+font-size = 14
+
+theme = Dracula
+
+window-padding-x = 10
+window-padding-y = 10
+```
