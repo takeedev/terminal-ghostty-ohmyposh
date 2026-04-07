@@ -55,3 +55,9 @@ theme = Dracula
 window-padding-x = 10
 window-padding-y = 10
 ```
+
+#### Install FZF 
+```shell
+brew install fzf
+$(brew --prefix)/opt/fzf/install
+```
