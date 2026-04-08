@@ -1,8 +1,8 @@
 # terminal-ghostty-ohmyposh
  
+## Mac
 ### Install Ghostty
 [Link Ghostty](https://ghostty.org/download)
-
 
 ### Install Oh My Posh
 ```shell
@@ -49,9 +49,7 @@ vim ~/.config/ghostty/config
 ```text
 font-family = "JetBrainsMono Nerd Font"
 font-size = 14
-
 theme = Dracula
-
 window-padding-x = 10
 window-padding-y = 10
 ```
@@ -65,5 +63,6 @@ $(brew --prefix)/opt/fzf/install
 #### Install zsh (zsh-syntax-highlighting) 
 ```shell
 brew install zsh-syntax-highlighting
+vim ~/.zshrc
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
