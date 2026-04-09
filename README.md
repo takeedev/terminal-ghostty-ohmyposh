@@ -1,6 +1,5 @@
 # terminal-ghostty-ohmyposh
  
-## Mac
 ### Install Ghostty
 [Link Ghostty](https://ghostty.org/download)
 
