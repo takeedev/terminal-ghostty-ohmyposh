@@ -1,50 +1,77 @@
 # terminal-ghostty-ohmyposh
- 
-### Install Ghostty
-[Link Ghostty](https://ghostty.org/download)
 
-### Install Oh My Posh
+Setup Ghostty terminal with Oh My Posh, JetBrains Mono Nerd Font, FZF, and zsh syntax highlighting.
+
+## 1. Install Ghostty
+
+Download and install Ghostty from:
+
+[Ghostty Download](https://ghostty.org/download)
+
+## 2. Install Oh My Posh
+
 ```shell
 brew install oh-my-posh
 ```
 
-#### Check version
+Check version:
+
 ```shell
 oh-my-posh --version
 ```
 
-#### Open zsh
+Open `.zshrc`:
+
 ```shell
 vim ~/.zshrc
 ```
 
-#### Add theme to .zshrc file
+Add one Oh My Posh theme to `~/.zshrc`:
+
 ```text
 eval "$(oh-my-posh init zsh --config ~/.cache/oh-my-posh/themes/agnoster.omp.json)"
+```
+
 or
+
+```text
 eval "$(oh-my-posh init zsh --config ~/.cache/oh-my-posh/themes/aliens.omp.json)"
+```
+
 or
+
+```text
 eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/M365Princess.omp.json')"
 ```
 
-#### Reload Or Reopen
+Reload shell:
+
 ```shell
 source ~/.zshrc
 ```
 
-### Install Font
+## 3. Install Font
+
 ```text
 brew install font-jetbrains-mono-nerd-font
 ```
-#### Create folder 
+
+## 4. Configure Ghostty
+
+Create config folder:
+
 ```shell
 mkdir -p ~/.config/ghostty
 ```
-#### Open file 
+
+Open Ghostty config:
+
 ```shell
 vim ~/.config/ghostty/config
 ```
-#### Reload Or Reopen
+
+Add config:
+
 ```text
 font-family = "JetBrainsMono Nerd Font"
 font-size = 14
@@ -53,15 +80,35 @@ window-padding-x = 10
 window-padding-y = 10
 ```
 
-#### Install FZF 
+Restart Ghostty or reload the config.
+
+## 5. Install FZF
+
 ```shell
 brew install fzf
 $(brew --prefix)/opt/fzf/install
 ```
 
-#### Install zsh (zsh-syntax-highlighting) 
+## 6. Install zsh-syntax-highlighting
+
 ```shell
 brew install zsh-syntax-highlighting
+```
+
+Open `.zshrc`:
+
+```shell
 vim ~/.zshrc
+```
+
+Add this line to `~/.zshrc`:
+
+```shell
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+```
+
+Reload shell:
+
+```shell
+source ~/.zshrc
 ```
